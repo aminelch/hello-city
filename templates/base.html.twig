@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Hello City! {% endblock %}</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/app.css')}}">
+    <style>
+        #wrapper {
+            background: rgb(255, 146, 146) !important;
+            background: linear-gradient(180deg, rgba(255, 146, 146, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(255, 0, 0, 0.8925770137156425) 42%) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        {% block body %}{% endblock %}
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+{% block title %} {{ parent() ~ '| Home' }} {% endblock %}
+{% block body %}
+<div class="wrapper">
+    <section id="app">
+        <img class="img-rounded mb-2" src="{{ asset('img/tunisia-flag.png') }}" alt="Tunisia flag">
+        <h1>Hello Tunisia</h1>
+        <h2>
+            <p>It'is currently {{ 'now' |date('H:m A')}}</p>
+        </h2>
+    </section>
+
+    <footer class="author">
+        by <a href="#" class="">aminelch © 2020</a> | view my portfolio on <a href="https://aminelch.github.io" title="My portfolio on Github">Github</a>
+    </footer>
+
+</div>
+
+
+{% endblock %}
